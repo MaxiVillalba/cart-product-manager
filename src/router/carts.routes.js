@@ -50,7 +50,8 @@ router.post("/:cid/product/:pid", async (req, res) => {
       // Agregar el producto al carrito si no existe
       findCart.products.push({ product: pid, quantity: 1 });
     } else {
-      // Incrementar la cantidad en 1 si el producto ya existe
+    
+      // Incrementar cantidad de 1 en 1 si ya existe
       product.quantity++;
     }
 
